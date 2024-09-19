@@ -1,0 +1,1 @@
+export { TextEmphasize } from './TextEmphasize'

@@ -27,6 +27,10 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
+  h1{
+    font-size: 2.5rem;
+  }
 }`
 
 //Global colors

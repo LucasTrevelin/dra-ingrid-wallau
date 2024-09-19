@@ -2,11 +2,12 @@ import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  width: 65%;
-  margin-top: 8rem;
+  width: 80%;
+  margin-top: 12rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: 1;
 `
 
 export const RegularTitleSection = styled(motion.div)`

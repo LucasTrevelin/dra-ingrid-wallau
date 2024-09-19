@@ -9,30 +9,24 @@ export const Container = styled.header`
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex: 1;
+  justify-content: center;
   z-index: 30;
 `
 
 export const ImageContainer = styled.div`
   height: 100%;
-  width: 100%;
   flex: 1;
   margin-left: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  color: ${({ theme }) => theme.colors.primary};
 `
 
 export const Image = styled.img`
-  aspect-ratio: 8.3/1;
-  width: 250px;
+  aspect-ratio: 2.94/1;
+  width: 200px;
   margin-left: 2rem;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
 `
 
 export const SmallScreenImage = styled.img`
