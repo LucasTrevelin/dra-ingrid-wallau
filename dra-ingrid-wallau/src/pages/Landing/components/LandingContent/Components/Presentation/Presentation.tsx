@@ -1,7 +1,7 @@
-import { ContentBox } from '../../../../../components/ContentBox/ContentBox'
-import { Pill } from '../../../../../components/Pill'
-import { TextEmphasize } from '../../../../../components/TextEmphasize'
-import { theme } from '../../../../../global.styled'
+import { ContentBox } from '../../../../../../components/ContentBox/ContentBox'
+import { Pill } from '../../../../../../components/Pill'
+import { TextEmphasize } from '../../../../../../components/TextEmphasize'
+import { theme } from '../../../../../../global.styled'
 import { Button } from './component/Button'
 import * as S from './Presentation.styled'
 
@@ -32,11 +32,11 @@ export const Presentation = () => {
       </ContentBox>
       <S.ImageContainer>
         <S.Image src='/images/presentation-image.jpg' />
-        <Pill color={theme.colors.white}>
+        <Pill backgroundColor={theme.colors.white}>
           <span>Dra. Ingrid Wallau </span>
           <span>CRM-DF: 24232</span>
         </Pill>
-        <Pill color={theme.colors.yellowMustard}>
+        <Pill backgroundColor={theme.colors.yellowMustard}>
           Psiquiatra e Psicogeriatra
         </Pill>
       </S.ImageContainer>

@@ -50,6 +50,6 @@ export const theme = {
     white: '#FFFFFF',
     black: '#000000',
     gray: '#999999',
-    cardGradient: 'linear-gradient(-91deg, #2C3E50 0%, #34495E 100%)'
+    cardGradient: 'linear-gradient(270deg, #2C3E50 0%, #4d6d8c 100%)'
   }
 }

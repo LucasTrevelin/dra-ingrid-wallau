@@ -6,13 +6,15 @@ export const ContentBox: React.FC<TContentBox> = ({
   variant,
   children,
   maxWidth,
-  aspectRatio
+  aspectRatio,
+  hasFooterItem
 }) => {
   return (
     <S.Container
       $maxWidth={maxWidth}
       $variant={variant}
       $aspectRatio={aspectRatio}
+      $hasFooterItem={hasFooterItem}
     >
       {children}
     </S.Container>
