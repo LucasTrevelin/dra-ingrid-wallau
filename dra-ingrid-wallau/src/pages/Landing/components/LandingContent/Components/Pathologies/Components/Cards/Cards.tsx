@@ -1,5 +1,5 @@
-import { Pill } from '../../../../../../../../../components/Pill'
-import { theme } from '../../../../../../../../../global.styled'
+import { Pill } from '../../../../../../../../components/Pill'
+import { theme } from '../../../../../../../../global.styled'
 import { pathologiesList, pathologiesMinimalList } from './Cards.constants'
 
 import * as S from './Cards.styled'

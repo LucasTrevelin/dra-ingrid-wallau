@@ -9,6 +9,8 @@ export const Container = styled.div`
   column-gap: 3rem;
   row-gap: 3rem;
   flex-wrap: wrap;
+  padding-top: 9.5rem; /* Adjust according to the desired space */
+  margin-top: -9.5rem; /* This counteracts the padding */
 
   h1,
   p {

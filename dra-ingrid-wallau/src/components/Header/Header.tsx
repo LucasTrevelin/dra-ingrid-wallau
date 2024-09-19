@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
     <>
       <S.Container>
         <S.ImageContainer>
-          <S.Image src='/images/temp_logo_blue.jpg' alt='header-logo' />
+          <S.Image src='/images/logo_preto.png' alt='header-logo' />
         </S.ImageContainer>
         <MappedLinks mappedLinks={headerLinks} />
       </S.Container>

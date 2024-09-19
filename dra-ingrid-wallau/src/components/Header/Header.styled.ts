@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   width: 100%;
   overflow-x: hidden;
-  height: 5.25rem;
+  height: 8.5rem;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -23,7 +23,7 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-  aspect-ratio: 2.94/1;
+  aspect-ratio: 1;
   width: 200px;
   margin-left: 2rem;
   border-radius: 10px;

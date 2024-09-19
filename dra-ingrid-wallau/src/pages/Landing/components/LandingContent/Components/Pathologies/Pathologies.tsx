@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { ContentBox } from '../../../../../../../components/ContentBox/ContentBox'
-import { Topic } from '../../../../../../../components/Topic'
+import { ContentBox } from '../../../../../../components/ContentBox/ContentBox'
+import { Topic } from '../../../../../../components/Topic'
 import { Cards } from './Components/Cards'
 
 import * as S from './Pathologies.styled'
@@ -11,7 +11,7 @@ export const Pathologies = () => {
 
   return (
     <ContentBox variant='filled' aspectRatio={'auto'} hasFooterItem>
-      <S.Container>
+      <S.Container id='Patologias tratadas'>
         <S.LateralPadding>
           <Topic title='Quais as patologias abordadas nas consultas?' />
         </S.LateralPadding>

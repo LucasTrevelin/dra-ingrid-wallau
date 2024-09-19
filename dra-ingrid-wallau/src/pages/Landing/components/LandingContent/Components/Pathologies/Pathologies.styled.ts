@@ -5,6 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 1rem;
+
+  padding-top: 11rem; /* Adjust according to the desired space */
+  margin-top: -11rem; /* This counteracts the padding */
 `
 
 export const LateralPadding = styled.div`
