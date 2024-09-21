@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../../helpers/breakpoints.helpers'
 
 export const Container = styled.button`
   outline: none;
@@ -9,17 +10,18 @@ export const Container = styled.button`
   justify-content: center;
   align-items: center;
   aspect-ratio: 1.18/1;
-  margin-right: 2rem;
   position: relative;
+  padding-right: 2rem;
 `
 
 export const Image = styled.img`
   aspect-ratio: 1.18/1;
   width: 30px;
   display: none;
-  backdrop-filter: blur(5px);
-
-  -webkit-backdrop-filter: blur(5px);
+  border-radius: 3px;
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
   :hover {
     transition: all 0.3s ease-in-out;
     text-decoration: underline;

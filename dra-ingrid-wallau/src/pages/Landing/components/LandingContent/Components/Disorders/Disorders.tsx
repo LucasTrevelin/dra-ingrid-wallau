@@ -1,4 +1,4 @@
-import { ContentBox } from '../../../../../../components/ContentBox/ContentBox'
+import { ContentBox } from '../../../../../../components/ContentBox'
 import { Topic } from '../../../../../../components/Topic'
 import { LateralPadding } from '../Pathologies/Pathologies.styled'
 import { InsideTopics } from './Components/insideTopics'
@@ -9,7 +9,7 @@ export const Disorders: React.FC = () => {
   return (
     <ContentBox variant='filled' aspectRatio={'auto'} hasFooterItem>
       <LateralPadding>
-        <Topic title='Quais as patologias abordadas nas consultas?' />
+        <Topic>Quais os Transtornos Psiquiátricos atendidos?</Topic>
       </LateralPadding>
       <S.Container id='Transtornos atendidos'>
         <S.ImageContainer>

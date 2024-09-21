@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { TStyledPill } from './Pill.types'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled.div<TStyledPill>`
   width: ${({ $width }) => ($width ? $width : '90%')};
@@ -17,4 +18,9 @@ export const Container = styled.div<TStyledPill>`
   border: 2px solid ${({ theme }) => theme.colors.primary};
   min-width: ${({ $minWidth }) => $minWidth};
   aspect-ratio: ${({ $aspectRatio }) => $aspectRatio};
+
+  @media screen and (${devices.sm}) {
+    width: ${({ $minWidth }) => !$minWidth && '274px'};
+    font-size: 1rem;
+  }
 `

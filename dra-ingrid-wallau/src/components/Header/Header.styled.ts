@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled.header`
   width: 100%;
@@ -20,6 +21,10 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @media screen and (${devices.sm}) {
+    justify-content: space-between;
+  }
 `
 
 export const Image = styled.img`
@@ -27,15 +32,18 @@ export const Image = styled.img`
   width: 200px;
   margin-left: 2rem;
   border-radius: 10px;
+  @media screen and (${devices.sm}) {
+    display: none;
+  }
 `
 
 export const SmallScreenImage = styled.img`
-  aspect-ratio: 1.18/1;
-  width: 30px;
+  aspect-ratio: 1;
+  width: 136px;
   display: none;
-  backdrop-filter: blur(5px);
-  margin-right: 2rem;
-  -webkit-backdrop-filter: blur(5px);
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
   :hover {
     transition: all 0.3s ease-in-out;
     text-decoration: underline;

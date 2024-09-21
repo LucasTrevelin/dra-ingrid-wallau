@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { devices } from '../../../helpers/breakpoints.helpers'
 
 export const LinksWrapper = styled(motion.dialog)`
   && {
@@ -23,4 +24,8 @@ export const LinksWrapper = styled(motion.dialog)`
   border: 0;
   outline: 0;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
 `

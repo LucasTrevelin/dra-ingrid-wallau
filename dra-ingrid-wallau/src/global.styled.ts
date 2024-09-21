@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { devices } from './helpers/breakpoints.helpers'
 
 export default createGlobalStyle`
 
@@ -30,6 +31,10 @@ body {
 
   h1{
     font-size: 2.5rem;
+
+    @media screen and (${devices.sm}){
+      font-size: 1.25rem;
+    }
   }
 }`
 
@@ -41,6 +46,8 @@ export const theme = {
     greenLight: '#98FB98',
     greenWhatsApp: '#27D366',
     background: '#001F54',
+    backgroundDarker: '#090F36',
+    backgroundPoem: '#3D65A1',
     yellowLight: '#F1DE74',
     yellowMustard: '#FFD700',
     cardBackground: '#F3F7F9',
@@ -52,6 +59,7 @@ export const theme = {
     gray: '#999999',
     grayHighlight: '#333333',
     grayFill: '#C8BDB6',
-    cardGradient: 'linear-gradient(270deg, #2C3E50 0%, #4d6d8c 100%)'
+    cardGradient: 'linear-gradient(270deg, #2C3E50 0%, #4d6d8c 100%)',
+    imageFilter: '#507DC0'
   }
 }

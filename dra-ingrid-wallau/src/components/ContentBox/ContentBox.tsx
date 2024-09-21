@@ -7,7 +7,8 @@ export const ContentBox: React.FC<TContentBox> = ({
   children,
   maxWidth,
   aspectRatio,
-  hasFooterItem
+  hasFooterItem,
+  id
 }) => {
   return (
     <S.Container
@@ -15,6 +16,7 @@ export const ContentBox: React.FC<TContentBox> = ({
       $variant={variant}
       $aspectRatio={aspectRatio}
       $hasFooterItem={hasFooterItem}
+      id={id}
     >
       {children}
     </S.Container>

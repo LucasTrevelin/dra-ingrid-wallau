@@ -19,4 +19,12 @@ export const ExpandButton = styled.button`
   border-radius: 0 0 1.25rem 1.25rem;
   background-color: ${({ theme }) => theme.colors.gray};
   margin-top: 2rem;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    filter: brightness(1.1);
+    transition: all 0.2s ease-in-out;
+  }
 `

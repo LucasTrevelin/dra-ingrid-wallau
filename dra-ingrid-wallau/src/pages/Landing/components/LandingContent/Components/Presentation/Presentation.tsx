@@ -1,4 +1,4 @@
-import { ContentBox } from '../../../../../../components/ContentBox/ContentBox'
+import { ContentBox } from '../../../../../../components/ContentBox'
 import { Pill } from '../../../../../../components/Pill'
 import { TextEmphasize } from '../../../../../../components/TextEmphasize'
 import { theme } from '../../../../../../global.styled'

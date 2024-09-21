@@ -24,9 +24,9 @@ export const NavLink = styled.a<TSpecialLinksProps>`
 
   &:hover {
     text-decoration: underline;
-    color: ${({ $variant, theme }) =>
-      $variant === 'selected' && theme.colors.orangeLight};
-    text-decoration-color: ${({ $variant, theme }) =>
-      $variant === 'selected' && theme.colors.orangeLight};
+    color: ${({ theme }) => theme.colors.orangeLight};
+    text-decoration-color: ${({ theme }) => theme.colors.orangeLight};
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
   }
 `

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../../../../../helpers/breakpoints.helpers'
 
 export const Container = styled.div`
   display: flex;
@@ -8,7 +9,7 @@ export const Container = styled.div`
   height: min-content;
   column-gap: 3rem;
   row-gap: 3rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   padding-top: 9.5rem; /* Adjust according to the desired space */
   margin-top: -9.5rem; /* This counteracts the padding */
 
@@ -18,7 +19,10 @@ export const Container = styled.div`
     margin: 0;
   }
   p {
-    font-size: 20px;
+    font-size: 1.25rem;
+    @media screen and (${devices.sm}) {
+      font-size: 0.875rem;
+    }
   }
 `
 
@@ -38,5 +42,10 @@ export const Image = styled.img`
   aspect-ratio: 1.21/1;
   height: 400px;
   opacity: 0.8;
-  border-radius: 20px;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  @media screen and (${devices.sm}) {
+    height: 274px;
+  }
 `

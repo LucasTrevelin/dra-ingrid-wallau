@@ -6,9 +6,10 @@ export type TContentBox = PropsWithChildren<{
   maxWidth?: CSSProperties['maxWidth']
   aspectRatio?: CSSProperties['aspectRatio']
   hasFooterItem?: boolean
+  id?: string
 }>
 
-type TBoxVariant = 'inverted' | 'filled'
+type TBoxVariant = 'inverted' | 'filled' | 'poem'
 
 export type TStyledVariant = {
   $variant: TBoxVariant

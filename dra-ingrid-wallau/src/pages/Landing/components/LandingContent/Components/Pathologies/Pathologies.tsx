@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ContentBox } from '../../../../../../components/ContentBox/ContentBox'
+import { ContentBox } from '../../../../../../components/ContentBox'
 import { Topic } from '../../../../../../components/Topic'
 import { Cards } from './Components/Cards'
 
@@ -13,7 +13,7 @@ export const Pathologies = () => {
     <ContentBox variant='filled' aspectRatio={'auto'} hasFooterItem>
       <S.Container id='Patologias tratadas'>
         <S.LateralPadding>
-          <Topic title='Quais as patologias abordadas nas consultas?' />
+          <Topic>Quais as patologias abordadas nas consultas?</Topic>
         </S.LateralPadding>
         <S.LateralPadding>
           <Cards isExpanded={isExpanded} />

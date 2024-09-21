@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../../helpers/breakpoints.helpers'
 
 export const LinksWrapper = styled.nav`
   display: flex;
@@ -11,5 +12,9 @@ export const LinksWrapper = styled.nav`
   :hover {
     transition: all 0.3s ease-in-out;
     text-decoration: underline;
+  }
+
+  @media screen and (${devices.sm}) {
+    display: none;
   }
 `

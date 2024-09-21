@@ -2,13 +2,14 @@ import * as S from './Topic.styled'
 import { TTopic } from './Topic.types'
 
 export const Topic: React.FC<TTopic> = ({
-  title,
+  children,
   variant = 'normal',
-  fontSize
+  fontSize,
+  color
 }) => {
   return (
-    <S.Container $variant={variant} $fontSize={fontSize}>
-      {title}
+    <S.Container $variant={variant} $fontSize={fontSize} $color={color}>
+      {children}
     </S.Container>
   )
 }

@@ -9,16 +9,17 @@ export const Container = styled.div`
   & > ul {
     font-family: 'Poppins', 'Helvetica Neue', sans-serif;
     color: ${({ theme }) => theme.colors.white};
-    font-weight: 600;
+    font-weight: 900;
     font-size: 1.125rem;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: ${({ theme }) => theme.colors.primary};
+    -webkit-text-stroke-color: ${({ theme }) => theme.colors.grayHighlight};
     list-style-type: circle;
     text-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
     & > li::marker {
       color: ${({ theme }) => theme.colors.primary};
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      font-weight: 900;
     }
   }
 `

@@ -1,11 +1,12 @@
 import styled, { css } from 'styled-components'
+import { StyledImageProps } from './Disorders.type'
 
 const rightBanner = css`
   right: 0;
   top: 0;
   height: 100%;
   width: 2.5rem;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.backgroundDarker};
   border-radius: 0 1.25rem 1.25rem 0;
   z-index: 4;
 `
@@ -17,6 +18,7 @@ const bottomBanner = css`
   background-color: ${({ theme }) => theme.colors.grayFill};
   border-radius: 0 0 1.25rem 1.25rem;
   z-index: 5;
+  opacity: 0.8;
 `
 
 export const Container = styled.article`
@@ -35,6 +37,7 @@ export const ImageContainer = styled.div`
   margin-bottom: 4rem;
   background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 1.25rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 `
 
 export const Image = styled.img`
@@ -46,11 +49,9 @@ export const Image = styled.img`
   opacity: 0.8;
 `
 
-export const ImageBanner = styled.div<{ $variant: 'right' | 'bottom' }>`
+export const ImageBanner = styled.div<StyledImageProps>`
   position: absolute;
-  opacity: 0.8;
   ${({ $variant }) => ($variant === 'right' ? rightBanner : bottomBanner)}
-  opacity: 0.8;
 `
 
 export const TextContainer = styled.div`
