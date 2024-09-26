@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { ContentBox } from '../../../../../../components/ContentBox'
 import { TextEmphasize } from '../../../../../../components/TextEmphasize'
 import { Topic } from '../../../../../../components/Topic'
@@ -5,6 +6,7 @@ import { theme } from '../../../../../../global.styled'
 import * as S from './HowDoIWork.styled'
 
 export const HowDoIWork = () => {
+  const scrollRef = useRef(null)
   return (
     <ContentBox variant='inverted' aspectRatio={'auto'}>
       <S.IdAnchor id='Como eu trabalho' />
@@ -16,7 +18,12 @@ export const HowDoIWork = () => {
         ?
       </Topic>
       <S.Centralizer>
-        <S.TextContainer>
+        <S.TextContainer
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        >
           Tenho interesse máximo em me dedicar a cada paciente de forma única,
           com{' '}
           <TextEmphasize options={{ color: theme.colors.greenLighter }}>
@@ -25,7 +32,16 @@ export const HowDoIWork = () => {
           . Procuro me atualizar diariamente quanto às evidências científicas e
           adotá-las aos meus atendimentos.
         </S.TextContainer>
-        <S.Image src='/images/work-photo.jpg' alt='dr-working' />
+        <S.ImageContainer>
+          <S.Image
+            src='/images/work-photo.jpg'
+            alt='dr-working'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.7 }}
+          />
+        </S.ImageContainer>
       </S.Centralizer>
       <Topic color={theme.colors.white}>
         Sobre as{' '}
@@ -34,7 +50,12 @@ export const HowDoIWork = () => {
         </TextEmphasize>
         ...
       </Topic>
-      <S.TextContainer>
+      <S.TextContainer
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ ease: 'linear', delay: 0.5 }}
+      >
         Atendimentos de adultos e idosos por telemedicina ou consultas
         domiciliares.
         <br />

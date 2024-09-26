@@ -31,12 +31,25 @@ export const Presentation = () => {
         <Button />
       </ContentBox>
       <S.ImageContainer>
-        <S.Image src='/images/presentation-image.jpg' />
-        <Pill backgroundColor={theme.colors.white}>
+        <S.Image
+          src='/images/presentation-image.jpg'
+          alt='dr-image'
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 }
+          }}
+          initial='hidden'
+          animate='visible'
+          transition={{ ease: 'linear', delay: 0.5 }}
+        />
+        <Pill backgroundColor={theme.colors.white} animationFrom='left'>
           <span>Dra. Ingrid Wallau </span>
           <span>CRM-DF: 24232</span>
         </Pill>
-        <Pill backgroundColor={theme.colors.yellowMustard}>
+        <Pill
+          backgroundColor={theme.colors.yellowMustard}
+          animationFrom='right'
+        >
           Psiquiatra e Psicogeriatra
         </Pill>
       </S.ImageContainer>

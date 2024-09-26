@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { ContentBox } from '../../../../../../components/ContentBox'
 import { TextEmphasize } from '../../../../../../components/TextEmphasize'
 import { Topic } from '../../../../../../components/Topic'
@@ -5,6 +6,7 @@ import { theme } from '../../../../../../global.styled'
 import * as S from './MyHistory.styled'
 
 export const MyHistory = () => {
+  const scrollRef = useRef(null)
   return (
     <ContentBox variant='filled' aspectRatio={'auto'}>
       <S.IdAnchor id='Minha história' />
@@ -12,8 +14,20 @@ export const MyHistory = () => {
         Minha história de vida e ligação com a psiquiatria e psicogeriatria
       </Topic>
       <S.Centralizer>
-        <S.Image src='/images/my-history.jpg' alt='dr-working' />
-        <S.TextContainer>
+        <S.Image
+          src='/images/my-history.jpg'
+          alt='dr-working'
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        />
+        <S.TextContainer
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        >
           Nascida em{' '}
           <TextEmphasize options={{ color: theme.colors.greenLighter }}>
             <strong>Gurupi – TO</strong>
@@ -43,7 +57,13 @@ export const MyHistory = () => {
         <Topic fontSize={'2rem'} color={theme.colors.orangeLight}>
           Detalhes
         </Topic>
-        <S.TextPoemContainer $alignment='left'>
+        <S.TextPoemContainer
+          $alignment='left'
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        >
           Eu gosto dos detalhes
           <br /> Então eu me dei bem
           <br /> Pra quem aprecia os detalhes,
@@ -61,27 +81,49 @@ export const MyHistory = () => {
           <br />
           <S.PoemImage
             $aspectRatio='1.38/1'
-            $width='376px'
-            $position={{ top: '8rem', right: '3rem' }}
+            $width='300px'
+            $position={{ top: '3rem', right: '3rem' }}
             src='/images/poem-1.jpg'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.5 }}
           />
           <S.ImageFilter
             $aspectRatio='1.38/1'
-            $width='376px'
-            $position={{ top: '8rem', right: '3rem' }}
+            $width='300px'
+            $position={{ top: '3rem', right: '3rem' }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.6 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.5 }}
           />
         </S.TextPoemContainer>
-        <S.TextPoemContainer $alignment='right'>
+        <S.TextPoemContainer
+          $alignment='right'
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        >
           <S.PoemImage
             $aspectRatio='1.5/1'
-            $width='376px'
+            $width='300px'
             $position={{ top: '7rem', left: '3rem' }}
             src='/images/poem-2.jpg'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.6 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.5 }}
           />
           <S.ImageFilter
             $aspectRatio='1.5/1'
-            $width='376px'
+            $width='300px'
             $position={{ top: '7rem', left: '3rem' }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.6 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.5 }}
           />
           Gosto dos fiozinhos brancos, formando uma rede de descanso para meu
           olhar
@@ -97,7 +139,13 @@ export const MyHistory = () => {
           <br /> Onde já se viu, querer ter essa honra assim agora?!
           <br />
         </S.TextPoemContainer>
-        <S.TextPoemContainer $alignment='left'>
+        <S.TextPoemContainer
+          $alignment='left'
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        >
           Gosto muito de te admirar
           <br /> Espero não te envergonhar
           <br /> Só não dá pra disfarçar a minha admiração
@@ -114,14 +162,29 @@ export const MyHistory = () => {
             $width='300px'
             $position={{ top: '5rem', right: '3rem' }}
             src='/images/poem-3.jpg'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.5 }}
           />
           <S.ImageFilter
             $aspectRatio='1.15/1'
             $width='300px'
             $position={{ top: '5rem', right: '3rem' }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.6 }}
+            viewport={{ root: scrollRef, once: true }}
+            transition={{ ease: 'linear', delay: 0.5 }}
           />
         </S.TextPoemContainer>
-        <S.TextPoemContainer $alignment='right' $isSignature>
+        <S.TextPoemContainer
+          $alignment='right'
+          $isSignature
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+        >
           WALLAU, INGRID - 28/04/2021
         </S.TextPoemContainer>
       </ContentBox>

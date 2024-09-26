@@ -8,6 +8,7 @@ export type TPillProps = PropsWithChildren<{
   width?: CSSProperties['width']
   minWidth?: CSSProperties['minWidth']
   aspectRatio?: CSSProperties['aspectRatio']
+  animationFrom: 'left' | 'right' | 'up' | 'down'
 }>
 
 export type TStyledPill = {

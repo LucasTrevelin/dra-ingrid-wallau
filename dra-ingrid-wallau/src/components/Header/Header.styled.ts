@@ -3,7 +3,7 @@ import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled.header`
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 8.5rem;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -12,6 +12,10 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   z-index: 30;
+
+  @media screen and (${devices.sm}) {
+    width: 100%;
+  }
 `
 
 export const ImageContainer = styled.div`

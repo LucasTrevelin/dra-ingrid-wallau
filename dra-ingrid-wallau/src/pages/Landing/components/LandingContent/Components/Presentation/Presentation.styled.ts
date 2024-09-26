@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { devices } from '../../../../../../helpers/breakpoints.helpers'
+import { motion } from 'framer-motion'
 
 export const Container = styled.div`
   display: flex;
@@ -27,7 +28,7 @@ export const Container = styled.div`
 `
 
 export const TextContent = styled.div`
-  max-width: 400px;
+  max-width: 25rem;
 `
 
 export const ImageContainer = styled.div`
@@ -38,9 +39,9 @@ export const ImageContainer = styled.div`
   row-gap: 1rem;
 `
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   aspect-ratio: 1.21/1;
-  height: 400px;
+  height: 25rem;
   opacity: 0.8;
   border-radius: 1.25rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

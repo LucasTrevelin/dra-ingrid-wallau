@@ -11,19 +11,37 @@ export const Cards: React.FC<TCards> = ({ isExpanded }) => {
     : pathologiesMinimalList
 
   return (
-    <S.Container>
-      {pathologiesToBeExhibited.map((pathology) => (
-        <Pill
-          backgroundColor={theme.colors.cardGradient}
-          color={theme.colors.white}
-          borderRadius={'3.125rem'}
-          width={'min-content'}
-          minWidth={'200px'}
-          key={`card-${pathology}`}
-        >
-          {pathology}
-        </Pill>
-      ))}
-    </S.Container>
+    <>
+      <S.Container>
+        {pathologiesToBeExhibited.map((pathology) => (
+          <Pill
+            backgroundColor={theme.colors.cardGradient}
+            color={theme.colors.white}
+            borderRadius={'3.125rem'}
+            width={'min-content'}
+            minWidth={'200px'}
+            key={`card-${pathology}`}
+            animationFrom='up'
+          >
+            {pathology}
+          </Pill>
+        ))}
+      </S.Container>
+      <S.SmallContainer>
+        {pathologiesToBeExhibited.map((pathology, index) => (
+          <Pill
+            backgroundColor={theme.colors.cardGradient}
+            color={theme.colors.white}
+            borderRadius={'3.125rem'}
+            width={'min-content'}
+            minWidth={'200px'}
+            key={`card-${pathology}`}
+            animationFrom={index % 2 === 1 ? 'right' : 'left'}
+          >
+            {pathology}
+          </Pill>
+        ))}
+      </S.SmallContainer>
+    </>
   )
 }

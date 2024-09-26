@@ -17,15 +17,28 @@ export const FooterCentralizer = styled.footer`
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
-
-  @media screen and (${devices.sm}) {
-    /*width: 100%;*/
-  }
 `
 
 export const Image = styled.img`
   aspect-ratio: 1;
   width: 200px;
+
+  @media screen and (${devices.sm}) {
+    display: none;
+  }
+`
+
+export const SmallScreenImage = styled.img`
+  aspect-ratio: 1;
+  width: 136px;
+  display: none;
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
+  :hover {
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+  }
 `
 
 export const SocialMediaContainer = styled.div`
@@ -46,6 +59,11 @@ export const SocialMediaButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`
+
+export const Link = styled.a`
+  color: inherit;
+  text-decoration: none;
 `
 
 export const SocialMediaButton = styled.button<TStyledSocialMediaButton>`

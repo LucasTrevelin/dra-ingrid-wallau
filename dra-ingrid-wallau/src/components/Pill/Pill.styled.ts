@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { TStyledPill } from './Pill.types'
 import { devices } from '../../helpers/breakpoints.helpers'
+import { motion } from 'framer-motion'
 
-export const Container = styled.div<TStyledPill>`
+export const Container = styled(motion.div)<TStyledPill>`
   width: ${({ $width }) => ($width ? $width : '90%')};
   display: flex;
   justify-content: center;
@@ -21,6 +22,8 @@ export const Container = styled.div<TStyledPill>`
 
   @media screen and (${devices.sm}) {
     width: ${({ $minWidth }) => !$minWidth && '274px'};
-    font-size: 1rem;
+    min-width: ${({ $minWidth }) => $minWidth && '150px'};
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
 `

@@ -11,6 +11,7 @@ export default createGlobalStyle`
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-width: 100%;
   max-width: 100vw;
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@ body {
   font-weight: 400;
   line-height: 1.5rem;
   width: 100%;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;

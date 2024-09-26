@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { TStyledVariant } from './ContentBox.types'
+import { devices } from '../../helpers/breakpoints.helpers'
+import { motion } from 'framer-motion'
 
-export const Container = styled.article<TStyledVariant>`
+export const Container = styled(motion.article)<TStyledVariant>`
   background-color: ${({ $variant, theme }) => {
     if ($variant === 'filled') return theme.colors.white
     if ($variant === 'poem') return theme.colors.backgroundPoem
@@ -19,4 +21,9 @@ export const Container = styled.article<TStyledVariant>`
   row-gap: 1.5rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   font-family: ${({ $variant }) => $variant === 'poem' && 'Podkova'};
+
+  @media screen and (${devices.sm}) {
+    padding: ${({ $hasFooterItem }) =>
+      $hasFooterItem ? '1rem 0 0 0' : '1rem'};
+  }
 `

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { devices } from '../../../../../../../../helpers/breakpoints.helpers'
+import { motion } from 'framer-motion'
 
 export const Container = styled.div`
   display: flex;
@@ -16,6 +18,13 @@ export const Container = styled.div`
     list-style-type: circle;
     text-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
+    @media screen and (${devices.disordersbreak1}) {
+      font-size: 0.875rem;
+    }
+
+    @media screen and (${devices.lg}) {
+    }
+
     & > li::marker {
       color: ${({ theme }) => theme.colors.primary};
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -24,7 +33,7 @@ export const Container = styled.div`
   }
 `
 
-export const TopicContainer = styled.div`
+export const TopicContainer = styled(motion.div)`
   display: flex;
   width: 100%;
   align-items: center;
@@ -33,5 +42,13 @@ export const TopicContainer = styled.div`
     line-height: 1.625rem;
     font-weight: 600;
     color: ${({ theme }) => theme.colors.grayHighlight};
+
+    @media screen and (${devices.disordersbreak1}) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (${devices.lg}) {
+      font-size: 1rem;
+    }
   }
 `

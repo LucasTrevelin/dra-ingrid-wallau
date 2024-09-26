@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 import { devices } from '../../../../../../helpers/breakpoints.helpers'
+import { motion } from 'framer-motion'
 
 export const Centralizer = styled.div`
   display: flex;
-  grid-template-columns: 2fr, 1fr;
   grid-gap: 6rem;
   align-items: center;
-  flex-wrap: wrap;
+  @media screen and (${devices.lg}) {
+    flex-wrap: wrap-reverse;
+    grid-gap: 2rem;
+  }
 `
 
 export const IdAnchor = styled.span`
@@ -14,14 +17,26 @@ export const IdAnchor = styled.span`
   margin-top: -12rem;
 `
 
-export const TextContainer = styled.p`
+export const TextContainer = styled(motion.p)`
   text-align: left;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 2.5rem;
+
+  @media screen and (${devices.sm}) {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
 `
 
-export const Image = styled.img`
+export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`
+
+export const Image = styled(motion.img)`
   border-radius: 200px;
   opacity: 80%;
   aspect-ratio: 1.6/1;

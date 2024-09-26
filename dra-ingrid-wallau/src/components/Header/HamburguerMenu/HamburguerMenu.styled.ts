@@ -11,7 +11,7 @@ export const Container = styled.button`
   align-items: center;
   aspect-ratio: 1.18/1;
   position: relative;
-  padding-right: 2rem;
+  right: 2rem;
 `
 
 export const Image = styled.img`
