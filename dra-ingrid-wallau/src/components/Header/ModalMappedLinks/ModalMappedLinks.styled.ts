@@ -33,7 +33,6 @@ export const LinksWrapper = styled(motion.dialog)`
 
 export const CloseContainer = styled.div`
   display: none;
-  background-color: red;
 
   @media screen and (${devices.sm}) {
     display: flex;

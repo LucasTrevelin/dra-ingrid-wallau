@@ -37,4 +37,8 @@ export const NavLink = styled.a<TSpecialLinksProps>`
     scale: 1.05;
     transition: all 0.2s ease-in-out;
   }
+
+  @media screen and (${devices.sm}) {
+    color: ${({ theme }) => theme.colors.white};
+  }
 `
