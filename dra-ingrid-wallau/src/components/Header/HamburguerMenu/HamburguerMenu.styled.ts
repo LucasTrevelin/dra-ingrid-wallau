@@ -6,12 +6,16 @@ export const Container = styled.button`
   border: 0;
   width: fit-content;
   background-color: inherit;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1.18/1;
   position: relative;
   right: 2rem;
+
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
 `
 
 export const Image = styled.img`

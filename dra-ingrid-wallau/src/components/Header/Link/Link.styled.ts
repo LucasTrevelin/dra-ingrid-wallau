@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { TSpecialLinksProps } from './Link.types'
+import { devices } from '../../../helpers/breakpoints.helpers'
 
 export const LinkContainer = styled.div<TSpecialLinksProps>`
   padding: 0.5rem 1rem;
@@ -10,6 +11,13 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
   height: 100%;
   :hover {
     cursor: pointer;
+  }
+
+  @media screen and (${devices.sm}) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    height: fit-content;
   }
 `
 

@@ -6,20 +6,17 @@ export const LinksWrapper = styled(motion.dialog)`
   && {
     padding: 0.8rem 0;
   }
-  width: min-content;
+  width: 100%;
+  height: 100%;
   display: none;
   flex-direction: column;
   align-items: center;
   margin: 0;
   position: fixed;
-  top: 3.5rem;
-  left: 30%;
   text-align: center;
   padding: 2rem;
   background-color: ${({ theme }) => theme.colors.background};
-  flex: 1;
-  right: 0.5rem;
-  z-index: 9999;
+  z-index: 99;
   border-radius: 10px;
   border: 0;
   outline: 0;
@@ -27,5 +24,38 @@ export const LinksWrapper = styled(motion.dialog)`
 
   @media screen and (${devices.sm}) {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 0.5rem;
+    padding: 2rem 2rem 0 2rem;
+  }
+`
+
+export const CloseContainer = styled.div`
+  display: none;
+  background-color: red;
+
+  @media screen and (${devices.sm}) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+`
+
+export const Button = styled.button`
+  display: none;
+  background-color: inherit;
+  outline: none;
+  border-radius: 50%;
+  border: 0;
+  padding-left: 0;
+  color: ${({ theme }) => theme.colors.white};
+  @media screen and (${devices.sm}) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `
