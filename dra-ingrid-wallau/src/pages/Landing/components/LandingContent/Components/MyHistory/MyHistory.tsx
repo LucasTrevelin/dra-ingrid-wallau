@@ -89,15 +89,6 @@ export const MyHistory = () => {
             viewport={{ root: scrollRef, once: true }}
             transition={{ ease: 'linear', delay: 0.5 }}
           />
-          <S.ImageFilter
-            $aspectRatio='1.38/1'
-            $width='300px'
-            $position={{ top: '3rem', right: '3rem' }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.6 }}
-            viewport={{ root: scrollRef, once: true }}
-            transition={{ ease: 'linear', delay: 0.5 }}
-          />
         </S.TextPoemContainer>
         <S.TextPoemContainer
           $alignment='right'
@@ -112,16 +103,7 @@ export const MyHistory = () => {
             $position={{ top: '7rem', left: '3rem' }}
             src='/images/poem-2.jpg'
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.6 }}
-            viewport={{ root: scrollRef, once: true }}
-            transition={{ ease: 'linear', delay: 0.5 }}
-          />
-          <S.ImageFilter
-            $aspectRatio='1.5/1'
-            $width='300px'
-            $position={{ top: '7rem', left: '3rem' }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.6 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ root: scrollRef, once: true }}
             transition={{ ease: 'linear', delay: 0.5 }}
           />
@@ -167,15 +149,6 @@ export const MyHistory = () => {
             viewport={{ root: scrollRef, once: true }}
             transition={{ ease: 'linear', delay: 0.5 }}
           />
-          <S.ImageFilter
-            $aspectRatio='1.15/1'
-            $width='300px'
-            $position={{ top: '5rem', right: '3rem' }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.6 }}
-            viewport={{ root: scrollRef, once: true }}
-            transition={{ ease: 'linear', delay: 0.5 }}
-          />
         </S.TextPoemContainer>
         <S.TextPoemContainer
           $alignment='right'
@@ -185,7 +158,7 @@ export const MyHistory = () => {
           viewport={{ root: scrollRef, once: true }}
           transition={{ ease: 'linear', delay: 0.5 }}
         >
-          WALLAU, INGRID - 28/04/2021
+          ('Detalhes', de Ingrid Wallau) - 28/04/2021
         </S.TextPoemContainer>
       </ContentBox>
     </ContentBox>

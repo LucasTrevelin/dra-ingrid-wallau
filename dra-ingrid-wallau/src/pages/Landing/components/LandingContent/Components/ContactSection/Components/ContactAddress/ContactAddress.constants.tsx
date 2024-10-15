@@ -24,12 +24,12 @@ export const ContentBody = (
       <S.IconTextContainer>
         <Mail color={theme.colors.primary} />
         <S.InformationParagraph>
-          <em>camilaadour@gmail.com</em>
+          <em>ingridwallaupsiquiatra@gmail.com</em>
         </S.InformationParagraph>
       </S.IconTextContainer>
       <S.IconTextContainer>
         <Phone color={theme.colors.primary} />
-        <S.InformationParagraph>(61) 8107-0150</S.InformationParagraph>
+        <S.InformationParagraph>(61) 98107-0150</S.InformationParagraph>
       </S.IconTextContainer>
     </S.InfoContainer>
   </S.ContactCardContainer>

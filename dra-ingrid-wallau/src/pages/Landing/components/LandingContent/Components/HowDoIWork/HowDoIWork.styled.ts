@@ -22,6 +22,8 @@ export const TextContainer = styled(motion.p)`
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2.5rem;
+  max-height: 300px;
+  overflow-y: auto;
 
   @media screen and (${devices.sm}) {
     font-size: 1.125rem;

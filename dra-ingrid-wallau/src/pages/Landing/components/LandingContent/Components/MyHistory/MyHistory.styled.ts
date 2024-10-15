@@ -37,7 +37,6 @@ export const TextContainer = styled(motion.p)`
 `
 
 export const Image = styled(motion.img)`
-  aspect-ratio: 0.74/1;
   width: 400px;
   border: 3px solid ${({ theme }) => theme.colors.black};
   @media screen and (${devices.sm}) {

@@ -30,9 +30,9 @@ export const Presentation = () => {
         </S.TextContent>
         <Button />
       </ContentBox>
-      <S.ImageContainer>
+      <S.ImageAndInfoContainer>
         <S.Image
-          src='/images/presentation-image.jpg'
+          src='/images/presentation_image.jpg'
           alt='dr-image'
           variants={{
             hidden: { opacity: 0 },
@@ -52,7 +52,7 @@ export const Presentation = () => {
         >
           Psiquiatra e Psicogeriatra
         </Pill>
-      </S.ImageContainer>
+      </S.ImageAndInfoContainer>
     </S.Container>
   )
 }

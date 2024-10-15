@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
+  border-radius: 20px;
   max-width: 380px;
 
   & > ul {
@@ -18,8 +18,12 @@ export const Container = styled.div`
     list-style-type: circle;
     text-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-    @media screen and (${devices.disordersbreak1}) {
+    @media screen and (${devices.disordersbreak2}) {
       font-size: 0.875rem;
+      color: ${({ theme }) => theme.colors.black};
+      -webkit-text-stroke-color: none;
+      -webkit-text-stroke-width: 0;
+      font-weight: 400;
     }
 
     @media screen and (${devices.lg}) {
@@ -38,14 +42,11 @@ export const TopicContainer = styled(motion.div)`
   width: 100%;
   align-items: center;
   & > span {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    margin: 0.25rem 0;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.grayHighlight};
-
-    @media screen and (${devices.disordersbreak1}) {
-      font-size: 1.5rem;
-    }
 
     @media screen and (${devices.lg}) {
       font-size: 1rem;

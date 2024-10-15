@@ -31,7 +31,7 @@ export const TextContent = styled.div`
   max-width: 25rem;
 `
 
-export const ImageContainer = styled.div`
+export const ImageAndInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,7 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled(motion.img)`
-  aspect-ratio: 1.21/1;
+  aspect-ratio: 1;
   height: 25rem;
   opacity: 0.8;
   border-radius: 1.25rem;

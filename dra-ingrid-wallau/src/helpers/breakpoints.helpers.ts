@@ -2,7 +2,7 @@ export const breakpoints = {
   sm: '640px',
   md: '1024px',
   lg: '1024px',
-  disordersbreak2: '1151px',
+  disordersbreak2: '1052px',
   disordersbreak1: '1395px',
   smallPoemFigures: '1421px',
   myHistory: '1499px'

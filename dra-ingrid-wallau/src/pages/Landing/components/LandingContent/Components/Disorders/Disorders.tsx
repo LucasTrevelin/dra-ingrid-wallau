@@ -21,10 +21,8 @@ export const Disorders: React.FC = () => {
           transition={{ ease: 'linear', delay: 0.5 }}
         >
           <S.Image
-            src='/images/disorders_photo.jpg'
+            src='/images/disorders_photo_2.jpg'
             alt='disorder-treatment-photo'
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
             viewport={{ root: scrollRef, once: true }}
             transition={{ ease: 'linear', delay: 0.5 }}
           />
