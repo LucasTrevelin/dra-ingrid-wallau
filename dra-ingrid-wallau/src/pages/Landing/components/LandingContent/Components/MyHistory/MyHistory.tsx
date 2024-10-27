@@ -41,35 +41,37 @@ export const MyHistory = () => {
           Tenho o privilégio do convívio com meus 4 avós, exemplos máximos e
           inspirações para escolher a Psiquiatria Geriátrica. Sempre apresentei
           grande interesse na observação do comportamento humano e avaliação das
-          emoções. Me formei em 2017 na Universidade Católica de Brasília.
-          Dentre todas as áreas da Medicina, me encantei por aquela que mais me
-          intrigava: aquela que se aprofunda no que há de mais íntimo e sagrado
-          do ser humano. Após trabalhar em clínicas, fazer plantões e atuar em
-          Unidades Básicas de Saúde, percebi a enorme demanda por profissionais
-          para acholher a área da saúde mental. Ter a permissão para
-          compartilhar dores, angústias e satisfações para mim é um presente
-          diário. Iniciei minha residência em 2019 no Rio Grande do Sul, local
-          no qual as minhas raízes estavam estruturadas. Durante este período
-          também fiz minha formação de pós-graduação em Neurociências e
-          Comportamento pela PUC-RS. Há época passamos pela pandemia de
-          COVID-19, o sofrimento mental e as demandas psiquiátricas agregadas ao
-          momento. Também presenciei novas posssibilidades de atendimentos em
-          Telemedicina, o que facilitou os cuidados naquele momento limitante.
+          emoções. <br />
+          Me formei em 2017 na Universidade Católica de Brasília. Dentre todas
+          as áreas da Medicina, me encantei por aquela que mais me intrigava:
+          aquela que se aprofunda no que há de mais íntimo e sagrado do ser
+          humano. Após trabalhar em clínicas, fazer plantões e atuar em Unidades
+          Básicas de Saúde, percebi a enorme demanda por profissionais para
+          acholher a área da saúde mental. Ter a permissão para compartilhar
+          dores, angústias e satisfações para mim é um presente diário. <br />{' '}
+          Iniciei minha residência em 2019 no Rio Grande do Sul, local no qual
+          as minhas raízes estavam estruturadas. Durante este período também fiz
+          minha formação de pós-graduação em Neurociências e Comportamento pela
+          PUC-RS. Há época passamos pela pandemia de COVID-19, o sofrimento
+          mental e as demandas psiquiátricas agregadas ao momento. Também
+          presenciei novas posssibilidades de atendimentos em Telemedicina, o
+          que facilitou os cuidados naquele momento limitante. <br />
           Já psiquiatra, retornei à Brasília no ano de 2022 com o intuito de
           fazer a sonhada subespecialização em Psiquiatria Geriátrica, quando
           pude aprender de forma pormenorizada sobre as doenças psiquiátricas
-          que atendem a terceira idade e como manejá-las de forma adequada.
+          que atendem a terceira idade e como manejá-las de forma adequada.{' '}
+          <br />
           Conhecida sempre por preferir sempre estar com idosos, me sentia quase
           hipnotizada pela convivência tão serena e sábia. Trabalho atendendo
           adultos e idosos em consultas presenciais domicialiares e
           teleconsultas on-line. Forneço atendimento personalizado com foco na
-          escuta empática, acolhedora e resolutiva. Hoje tenho a oportunidade de
-          fazer o que mais amo, aprendendo diariamente com os meus pacientes e
-          tendo a minha parcela de contribuição na redução do sofrimento mental
-          e no restabelecimento de uma vida que vale a pena ser vivida. Ser
-          psiquiatr é ter a oportunidade de realizar conexões únicas e aprender
-          sobre o que permeia o que há mais de nobre no ser humano. Deoxo muito
-          de mim, ganho em troca sempre mais!
+          escuta empática, acolhedora e resolutiva. <br /> Hoje tenho a
+          oportunidade de fazer o que mais amo, aprendendo diariamente com os
+          meus pacientes e tendo a minha parcela de contribuição na redução do
+          sofrimento mental e no restabelecimento de uma vida que vale a pena
+          ser vivida. Ser psiquiatr é ter a oportunidade de realizar conexões
+          únicas e aprender sobre o que permeia o que há mais de nobre no ser
+          humano. Deoxo muito de mim, ganho em troca sempre mais!
         </S.TextContainer>
       </S.Centralizer>
       <ContentBox variant='poem' aspectRatio={'auto'}>
