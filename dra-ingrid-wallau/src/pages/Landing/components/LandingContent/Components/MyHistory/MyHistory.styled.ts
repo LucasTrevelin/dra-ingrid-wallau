@@ -29,6 +29,8 @@ export const TextContainer = styled(motion.p)`
   font-weight: 400;
   line-height: 2.5rem;
   margin: 0;
+  max-height: 25rem;
+  overflow-y: auto;
 
   @media screen and (${devices.sm}) {
     font-size: 1.125rem;
@@ -39,6 +41,7 @@ export const TextContainer = styled(motion.p)`
 export const Image = styled(motion.img)`
   width: 400px;
   border: 3px solid ${({ theme }) => theme.colors.black};
+  border-radius: 5px;
   @media screen and (${devices.sm}) {
     width: 200px;
   }

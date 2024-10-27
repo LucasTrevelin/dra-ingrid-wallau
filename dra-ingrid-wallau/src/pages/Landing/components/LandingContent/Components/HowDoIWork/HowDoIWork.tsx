@@ -63,9 +63,9 @@ export const HowDoIWork = () => {
         telemedicina buscamos entender o paciente, suas queixas, angústias e
         toda a sua história de vida de forma ampla e pormenorizada. A escuta
         empática, a elaboração diagnóstica e o acolhimento das necessidades e
-        individualidades do pacientes são pontos chaves destes atendimentos. São
-        pontos primordiais a total confidencialidade e o tratamento baseado em
-        evidências científicas. As receitas são assinadas e enviadas
+        individualidades dos pacientes são pontos chaves destes atendimentos.
+        São pontos primordiais a total confidencialidade e o tratamento baseado
+        em evidências científicas. As receitas são assinadas e enviadas
         digitalmente, quando possível, com QR code para acesso fácil em
         farmácias. Quando não possível, receitas são enviadas por SEDEX
         registrado, com fornecimento de protocolo de acompanhamento. <br />{' '}
