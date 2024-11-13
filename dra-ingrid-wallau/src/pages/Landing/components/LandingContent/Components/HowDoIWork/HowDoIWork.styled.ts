@@ -41,7 +41,7 @@ export const ImageContainer = styled.div`
 export const Image = styled(motion.img)`
   border-radius: 200px;
   opacity: 80%;
-  aspect-ratio: 1.6/1;
+  aspect-ratio: 1.43/1;
   width: 400px;
 
   @media screen and (${devices.sm}) {

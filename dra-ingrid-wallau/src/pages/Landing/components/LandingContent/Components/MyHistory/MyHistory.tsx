@@ -61,7 +61,7 @@ export const MyHistory = () => {
           pude aprender de forma pormenorizada sobre as doenças psiquiátricas
           que atendem a terceira idade e como manejá-las de forma adequada.{' '}
           <br />
-          Conhecida sempre por preferir sempre estar com idosos, me sentia quase
+          Conhecida por preferir sempre estar com idosos, me sentia quase
           hipnotizada pela convivência tão serena e sábia. Trabalho atendendo
           adultos e idosos em consultas presenciais domicialiares e
           teleconsultas on-line. Forneço atendimento personalizado com foco na
@@ -69,9 +69,9 @@ export const MyHistory = () => {
           oportunidade de fazer o que mais amo, aprendendo diariamente com os
           meus pacientes e tendo a minha parcela de contribuição na redução do
           sofrimento mental e no restabelecimento de uma vida que vale a pena
-          ser vivida. Ser psiquiatr é ter a oportunidade de realizar conexões
+          ser vivida. Ser psiquiatra é ter a oportunidade de realizar conexões
           únicas e aprender sobre o que permeia o que há mais de nobre no ser
-          humano. Deoxo muito de mim, ganho em troca sempre mais!
+          humano. Deixo muito de mim, ganho em troca sempre mais!
         </S.TextContainer>
       </S.Centralizer>
       <ContentBox variant='poem' aspectRatio={'auto'}>
@@ -181,6 +181,12 @@ export const MyHistory = () => {
         >
           ('Detalhes', de Ingrid Wallau) - 28/04/2021
         </S.TextPoemContainer>
+        <S.PoemAuthorFrame>
+          <S.PoemAuthorImage
+            src='/images/poem_image.jpg'
+            alt='poem-author-image'
+          />
+        </S.PoemAuthorFrame>
       </ContentBox>
     </ContentBox>
   )

@@ -48,6 +48,28 @@ export const Image = styled(motion.img)`
   }
 `
 
+export const PoemAuthorFrame = styled(motion.div)`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (${devices.sm}) {
+    justify-content: center;
+  }
+`
+
+export const PoemAuthorImage = styled(motion.img)`
+  aspect-ratio: 0.61;
+  width: 200px;
+  border-radius: 20px;
+  display: none;
+  @media screen and (${devices.sm}) {
+    display: block;
+    width: 200px;
+  }
+  border: 5px solid white;
+`
+
 export const TextPoemContainer = styled(motion.p)<TStyledPoemText>`
   text-align: ${({ $alignment }) => $alignment};
   font-size: ${({ $isSignature }) => ($isSignature ? '1.25rem' : '1.125rem')};
